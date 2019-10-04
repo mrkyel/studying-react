@@ -1,17 +1,22 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
-import Hello from "../Hello";
-import { About, Home } from "../pages";
+import { Route, Switch } from "react-router-dom";
+import Hello from "../pages/Hello";
+import Menu from "../components/Menu";
+import { About, Posts } from "../pages";
 
 class App extends Component {
   render() {
     return (
       <>
         <div>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Menu />
+          <Route exact path="/" component={Hello} />
+          <Switch>
+            <Route path="/about/:name" component={About} />
+            <Route path="/about" component={About} />
+          </Switch>
+          <Route path="/posts" component={Posts} />
         </div>
-        <Hello />
       </>
     );
   }

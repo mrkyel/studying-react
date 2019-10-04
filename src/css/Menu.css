@@ -1,0 +1,20 @@
+.EachMenu {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  background: #4584b1;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #60b99a;
+}
