@@ -15,12 +15,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 98vh;
   background-image: url("../media/1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: rgb(8, 8, 8);
   width: 100%;
 }
 

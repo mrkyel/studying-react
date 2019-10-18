@@ -1,20 +1,31 @@
-.EachMenu {
-  list-style: none;
-  display: inline-block;
-  margin: 10px;
-  padding: 20px;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  background: #4584b1;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
 
 .Header {
-  display: flex;
-  justify-content: space-around;
+  float: right;
+  background: transparent;
+  color: white;
+  height: 64px;
+  width: 775px;
+  border-radius: 2px 2px 30px 30px;
+  position: fixed;
+  width: 95vw;
+}
 
-  margin: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  background: #60b99a;
+.Header ul {
+  list-style: none;
+  margin: 0;
+}
+
+.Header ul li:hover {
+  opacity: 1;
+}
+
+.header-li {
+  font-family: "Roboto", sans-serif;
+  margin-right: 3rem;
+  padding: 1.5rem;
+  float: right;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.6;
 }
