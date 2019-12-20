@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MenuCss from "../css/Menu.css";
-import styled from "styled-components";
+import "../css/Menu.css";
 
 const Menu = () => {
   return (
@@ -15,12 +14,7 @@ const Menu = () => {
             <Link to="/posts">Posts</Link>
           </li>
           <li className="header-li">
-            <Link exact to="/about">
-              About
-            </Link>
-          </li>
-          <li className="header-li">
-            <Link to="/about/foo">About Foo</Link>
+            <Link to="/about">About</Link>
           </li>
           <li className="header-li">
             <Link exact to="/">

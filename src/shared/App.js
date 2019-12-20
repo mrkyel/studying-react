@@ -1,23 +1,25 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
-import Hello from "../pages/Hello";
+import { Route } from "react-router-dom";
 import Menu from "../components/Menu";
-import { About, Posts, Login } from "../pages";
+import { Hello, About, Posts, Login } from "../pages";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <>
         <div>
           <Menu />
           <Route exact path="/" component={Hello} />
-          <Switch>
-            <Route path="/about/:name" component={About} />
-            <Route path="/about" component={About} />
-          </Switch>
+          <Route path="/about" component={About} />
           <Route path="/posts" component={Posts} />
-          <Route path="/posts" component={Login} />
+          <Route path="/login" component={Login} />
         </div>
+        <div></div>
       </>
     );
   }

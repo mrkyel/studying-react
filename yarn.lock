@@ -8074,6 +8074,14 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-kakao-login@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-kakao-login/-/react-kakao-login-1.1.1.tgz#02b91050531c5401dd272d24ae02117d36f71b1c"
+  integrity sha512-h+J9wV6u0nevEvGtF1bBcrrJBI+UjYMdPKPTyKJn1BovkFXhOm8J8f84seNTzzchuwSUxX9bcW5/XhLHINJxgA==
+  dependencies:
+    prop-types "^15.6.0"
+    react "^16.5.1"
+
 react-router-dom@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.1.2.tgz#06701b834352f44d37fbb6311f870f84c76b9c18"
@@ -8163,6 +8171,15 @@ react-scripts@3.1.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.0.7"
+
+react@^16.5.1:
+  version "16.10.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
+  integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
 
 react@^16.9.0:
   version "16.10.1"

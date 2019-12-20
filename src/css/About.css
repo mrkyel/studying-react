@@ -1,0 +1,14 @@
+.todoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f9f9f9;
+}

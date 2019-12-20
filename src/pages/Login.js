@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { GoogleLogin } from "react-google-login";
 import styled from "styled-components";
+import KakaoLogin from "react-kakao-login";
 
 class Login extends Component {
   constructor(props) {
@@ -12,9 +12,13 @@ class Login extends Component {
     };
   }
 
-  // Google Login
-  responseGoogle = res => {
-    console.log(res);
+  // Kakao login
+  responseKakao = res => {
+    this.setState({
+      id: res.profile.id,
+      name: res.profile.properties.nickname,
+      provider: "kakao"
+    });
   };
 
   // Login fail
@@ -25,11 +29,12 @@ class Login extends Component {
   render() {
     return (
       <Container>
-        <GoogleLogin
-          clientId={process.env.REACT_APP_Google}
-          buttonText="Google"
-          onSuccess={this.responseGoogle}
+        <KakaoButton
+          jaKey={process.env.REACT_APP_Kakao}
+          buttonText="Kakao"
+          onSuccess={this.responseKakao}
           onFailure={this.responseFail}
+          getProfile="true"
         />
       </Container>
     );
@@ -39,6 +44,20 @@ class Login extends Component {
 const Container = styled.div`
   display: flex;
   flex-flow: column wrap;
+`;
+
+const KakaoButton = styled(KakaoLogin)`
+  padding: 0;
+  width: 190px;
+  height: 44px;
+  line-height: 44px;
+  color: #783c00;
+  background-color: #ffeb00;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 `;
 
 export default Login;
